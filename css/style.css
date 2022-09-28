@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;900&display=swap');
+
+/*mobile first 0px-500px*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    background-image: url("../imgs/textura_fondo.jpg");
+    min-height: 100vh;
+}
+
+header {
+    background-color: #303030;
+    position: sticky;
+    top: 0;
+    padding-bottom: 0.2em;
+}
+
+.logo {
+    margin-left: 2em;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
+}
+
+.botones_nav {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: purple;
+    font-weight: bold;
+}
+
+main {
+    padding-top: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 1em;
+    color: gold;
+    font-weight: bold;
+}
+
+.img-noticias {
+    height: 290px;
+    width: 499px;
+    border: 3px solid black;
+    padding: 2px;
+}
+
+.img-noticias:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.texto-noticias {
+    border-left: solid #5B6DCD 5px;
+    padding: 5px;
+    margin-left: 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+}
+
+.boton-more-news {
+    padding: 10px;
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 12.5em;
+}
+
+.tour {
+    margin-top: 2em;
+    background-color: black;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.fechas-tour-celda-descripcion {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.boton-tickets {
+    padding: 10px;
+    background-color: yellowgreen;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 13em;
+}
+
+.fechas-tour-fecha {
+    font-weight: bolder;
+    color: gold;
+    text-align: center;
+}
+
+.boton-compra-tickets {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.boton-more-dates {
+    padding: 10px;
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    margin-left: 12em;
+
+}
+
+.boton-dates {
+    box-sizing: border-box;
+    height: 15px;
+}
+
+.fechas-tour-nombre-evento {
+    text-align: center;
+}
+
+.fechas-tour-ubicacion {
+    text-align: center;
+}
+
+.img-producto {
+    height: 300px;
+    width: 300px;
+}
+
+.contenedor-img-producto {
+    background-color: white;
+    border: 3px solid gold;
+    padding: 2px;
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+}
+
+.texto-productos {
+    box-sizing: border-box;
+    width: 499px;
+    text-align: center;
+
+}
+
+.producto-1 {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-2 {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-3 {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-botones-compra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botones-compra {
+    padding: 10px;
+    background-color: yellowgreen;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-left: 0.5em;
+}
+
+.contenedor-boton-more-merch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-more-merch {
+    padding: 10px;
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #303030;
+}
+
+.footer-derechos {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contenedor-redes {
+    padding-left: 11.5em;
+}
+
+header {
+    grid-area: header;
+}
+
+.carousel {
+    grid-area: carousel;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.contenedor_titulo_section {
+    grid-area: titulo_section;
+}
+
+.main_seccion_noticias {
+    grid-area: news_main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.envolturaGrillaindex {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "carousel"
+        "main"
+        "footer";
+}
+
+.contenedor_titulo_section {
+    height: 90px;
+}
+
+.titulo_gigante {
+    font-size: 80px;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.contenedor_texto_articulo {
+    padding: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    inline-size: 485px;
+}
+
+.img-articulos {
+    height: 290px;
+    width: 485px;
+    border: 3px solid black;
+    padding: 2px;
+}
+
+.img-articulos:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.envoltura-grilla-news-section {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo_section"
+        "news_main"
+        "footer";
+}
+
+
+@media (min-width:500px) {
+
+    .contenedor-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        box-sizing: border-box;
+        width: 30em;
+    }
+
+    .contenedor-imagen-noticias {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    h3 {
+        margin-top: 0.3em;
+    }
+
+    .contenedor-boton-news {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .boton-more-news {
+        padding: 10px;
+        background-color: yellow;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 12em;
+    }
+
+    .boton-tickets {
+        padding: 10px;
+        background-color: yellowgreen;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 12em;
+    }
+
+    .boton-compra-tickets {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .boton-more-dates {
+        padding: 10px;
+        background-color: yellow;
+        font-weight: bold;
+        color: black;
+        margin-right: 12em;
+
+    }
+
+    .boton-dates {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 2em;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-img-producto {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+
+    }
+
+    .contenedor-botones-compra {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 1em;
+    }
+
+    .contenedor-redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .img-articulos {
+        width: 600px;
+        height: 350px;
+    }
+
+    .contenedor_texto_articulo {
+        inline-size: 520px;
+        text-align: center;
+    }
+
+    .contenedor_articulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (min-width:768px) {
+    .texto-noticias {
+        inline-size: 30em;
+    }
+
+    .contenedor-texto-noticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fechas-tour-tabla {
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+
+    .titulo_gigante {
+        text-align: center;
+    }
+
+    .articulos_seccion_noticias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .img-articulos {
+        width: 600px;
+    }
+
+    .contenedor_articulos_seccion_noticias_2 {
+        padding-left: 20px;
+    }
+}
